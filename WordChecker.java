@@ -9,12 +9,7 @@ public class WordChecker {
         wordList = words;
     }
 
-    /**
-     * Returns true if each element of wordList (except the first) contains the
-     * previous element as a substring and returns false otherwise.
-     * Precondition: wordList contains at least two elements.
-     * Postcondition: wordList is unchanged.
-     */
+
     public boolean isWordChain() {
         // Loop through the list starting from the second element
         for (int i = 1; i < wordList.size(); i++) {
@@ -29,12 +24,7 @@ public class WordChecker {
         return true; // If all words meet the condition, return true
     }
 
-    /**
-     * Returns an ArrayList<String> based on strings from wordList that start with target.
-     * Each element of the returned ArrayList has had the initial occurrence of target removed.
-     * Postconditions: wordList is unchanged.
-     * Items appear in the returned list in the same order as they appear in wordList.
-     */
+
     public ArrayList<String> createList(String target) {
         ArrayList<String> resultList = new ArrayList<>(); // Create an empty result list
 
