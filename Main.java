@@ -13,7 +13,7 @@ public class Main {
         WordChecker checker = new WordChecker(words);
 
         // Test isWordChain method
-        System.out.println("Is word chain: " + checker.isWordChain()); // Expected output: true
+        System.out.println("Is word chain: " + checker.isWordChain()); // Expected output: false
 
         // Modify the list and test isWordChain again
         words.set(3, "bant");  // Change the last word to "bant" to break the chain
@@ -22,6 +22,6 @@ public class Main {
         // Test createList method
         ArrayList<String> resultList = checker.createList("ban");
         System.out.println("Result of createList with 'ban': " + resultList); 
-        // Expected output: [d, dit]
+        // Expected output: [d, dit, t]
     }
 }
